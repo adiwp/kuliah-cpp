@@ -31,7 +31,7 @@ void tampil2() {
         i = k + 1;
         
         while (i < n) {
-            if (A[i] > A[j])
+            if (A[i] < A[j])
                 j = i;
             cout << A[i] << " ";
             i++;

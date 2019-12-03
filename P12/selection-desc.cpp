@@ -11,7 +11,7 @@ int selectionSort(int A[], int n)
         //finding smallest element in unsorted array
         for (j = i + 1; j < n; j++)
         {
-            if (A[j] < A[small])
+            if (A[j] > A[small])
                 small = j;
         }
 
@@ -40,11 +40,12 @@ int main()
     int A[n], i;
     cout << "enter elements of array\n";
 
-    for (i = 0; i < n; i++) {
+    for (i = 0; i < n; i++)
+    {
         cout << "A[" << i << "]: ";
         cin >> A[i];
     }
-    
+
     cout << "Array before sorting\n";
 
     displayArray(A, n);
